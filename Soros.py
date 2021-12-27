@@ -90,7 +90,7 @@ while True:
 			soros_lucro = 0.0
 			soros_atual = 0
 
-	status,id = API.buy_digital_spot_v2(pares_bin, entrada, dir, 1)
+	status,id = API.buy_digital_spot(pares_bin, entrada, dir, 1)
 	if status:
 		print(f'''\n       - Aguardando Resultado...:  {(face, dir.upper())} ''')    
 		status = False
